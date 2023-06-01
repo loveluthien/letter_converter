@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Converter</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <h1>Input Display</h1>
+	<label for="input">Input:</label>
+	<input type="text" id="input" name="input">
+	<button onclick="displayInput()">Display</button>
+	<p>
+	<span id="output-label">Output: </span>
+	<span id="output"></span>
+	</p> -->
+
+	<h1>Upper and lower Converter</h1>
+
+	<fieldset>
+		<legend>Converter</legend>
+
+			<table>
+				<tr>
+					<th><label for="input1">Input:</label></th>
+					<th class="mid_col"></th>
+					<th><label for="result">Output:</label></th>
+				</tr>
+				<tr>
+					<td><input type="text" id="input1" name="input1" 
+						class="showbox" placeholder="3Kel"
+						onkeypress = "if (event.keyCode == 13)
+                        document.getElementById('Covert_B').click()"></td>
+					<td class="mid_col"> <span>&#8594;</span> </td>
+					<td><label id="result"></label>	</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="mid_col"><button id="Covert_B" onclick="convertLetters()">Convert</button></td>
+					<td></td>
+				</tr>
+			</table>
+
+			<!-- <label for="input1">Input:</label>
+			<input type="text" id="input1" name="input1">
+			<button onclick="convertLetters()">Convert</button>
+			<label for="result">Output:</label>
+			<label id="result"></label>	 -->
+			
+			<!-- <p id="result"></p> -->
+			<!-- <div id="result"></div> -->
+	</fieldset>
+
+</body>
+</html>
